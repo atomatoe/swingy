@@ -101,5 +101,14 @@ ________________________________________________________________
 <p><a href="https://github.com/atomatoe">Мой github</a></p>
 <p><a href="http://java-online.ru/libs-swing.xhtml">Java Swing</a></p>
 <p><a href="https://habr.com/ru/post/68318/">Javax Validation для начинающих</a></p>
+<details>
+<summary>Дополнительно</summary>
+<p></p>
+<p>Советую не сразу приступать к выполнению проекта. Потренируйтесь. Поработайте с Java Swing, задайте себе вопрос - как вы будете делать GUI - "фронтовую" часть. Большую часть времени в этом проекте я потратил на разбор работы GUI интерфейса и его разметки.</p>
+<p><a href="http://www.quizful.net/post/swing-layout-managers">Layout Swing. Кратко.</a></p>
+<p><a href="https://spec-zone.ru/RU/Java/Tutorials/uiswing/layout/gridbag.html">GridBagLayout. Как использовать</a></p>
+<p><a href="https://ipsoftware.ru/posts/gridbaglayout/">Еще о GridBagLayot</a></p>
 
+</details>
+  
 </details>
