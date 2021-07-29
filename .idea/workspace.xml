@@ -5,16 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/swingy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateHero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/CreateHero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/MainWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/MainWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/MainWindow$ButtonClickListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/MainWindow$ButtonClickListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/MainWindow.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

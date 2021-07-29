@@ -1,5 +1,7 @@
 package View;
 
+import Controller.GUIcontroller;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -74,11 +76,13 @@ public class MainWindow {
                 // Очистка окна после нажатия кнопки
                 mainFrame.getContentPane().removeAll();
                 mainFrame.getContentPane().repaint();
+                GUIcontroller.getInstance().stage_CreateHero(mainFrame);
             } else if(command.equals( "Load hero" ))  {
 //                statusLabel.setText("Load hero Button clicked.");
                 // Очистка окна после нажатия кнопки
                 mainFrame.getContentPane().removeAll();
                 mainFrame.getContentPane().repaint();
+                GUIcontroller.getInstance().stage_LoadHero();
             } else {
                 System.exit(0);
             }
