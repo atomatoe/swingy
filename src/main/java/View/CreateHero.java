@@ -1,7 +1,5 @@
 package View;
 
-import Controller.GUIcontroller;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -18,6 +16,16 @@ public class CreateHero {
     private void prepareGUI() {
         controlPanel = new JPanel();
         controlPanel.setLayout(new FlowLayout());
+
+        ImageIcon imageIcon = new ImageIcon("hero1.jpg"); // load the image to a imageIcon
+        Image image = imageIcon.getImage().getScaledInstance(75, 75,  java.awt.Image.SCALE_SMOOTH);
+        imageIcon = new ImageIcon(image);  // transform it back
+
+        JLabel label = new JLabel(imageIcon);
+
+
+
+        mainFrame.add(label); // add image
         mainFrame.add(controlPanel);
         mainFrame.setVisible(true);
     }
