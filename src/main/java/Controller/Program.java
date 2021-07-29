@@ -1,10 +1,10 @@
 package Controller;
 
-import View.MainWindow;
+import test.MainWindow;
 
 public class Program {
     public static void main(String[] args){
-        MainWindow window = new MainWindow();
-        window.showEventDemo();
+        GameController game = GameController.getInstance();
+        game.stage_main();
     }
 }

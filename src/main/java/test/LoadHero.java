@@ -1,4 +1,4 @@
-package View;
+package test;
 
 public class LoadHero {
 }
