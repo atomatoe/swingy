@@ -1,4 +1,4 @@
-# avaj-launcher
+# Swingy
 
 <p align="center"><img src="" alt="Здесь должно быть фото"</p>
 
