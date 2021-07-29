@@ -65,14 +65,20 @@ public class MainWindow {
 
         mainFrame.setVisible(true);
     }
-    private class ButtonClickListener implements ActionListener{
+        private class ButtonClickListener implements ActionListener{
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();
 
             if( command.equals( "Create hero" ))  {
-                statusLabel.setText("Create hero Button clicked.");
+//                statusLabel.setText("Create hero Button clicked.");
+                // Очистка окна после нажатия кнопки
+                mainFrame.getContentPane().removeAll();
+                mainFrame.getContentPane().repaint();
             } else if(command.equals( "Load hero" ))  {
-                statusLabel.setText("Load hero Button clicked.");
+//                statusLabel.setText("Load hero Button clicked.");
+                // Очистка окна после нажатия кнопки
+                mainFrame.getContentPane().removeAll();
+                mainFrame.getContentPane().repaint();
             } else {
                 System.exit(0);
             }
