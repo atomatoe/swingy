@@ -2,7 +2,6 @@ package View;
 
 import Controller.GameController;
 import Model.Window;
-import test.MainWindow;
 
 import javax.swing.*;
 import java.awt.*;
@@ -23,14 +22,16 @@ public class MainPage {
 
     public void paint_page() {
         Window frame = Window.getInstance();
-        frame.getMainFrame().setLayout(new GridBagLayout());
+        frame.create_background("./src/main/resources/images/mainPage.png");
 
         JPanel button_panel = new JPanel();
+        button_panel.setOpaque(false); // убираем белый цвет на jpanel кнопок
         button_panel.setLayout(new FlowLayout());
 
-        JButton createHero = new JButton("Create Hero");
-        JButton loadHero = new JButton("Load Hero");
-        JButton exit = new JButton("Exit");
+        JButton createHero = frame.create_button("Create Hero", 16);
+        JButton loadHero = frame.create_button("Load Hero", 16);
+        JButton exit = frame.create_button("Exit", 16);
+
         createHero.setActionCommand("Create hero");
         loadHero.setActionCommand("Load hero");
 
@@ -38,32 +39,25 @@ public class MainPage {
         loadHero.addActionListener(new ButtonClickListener());
         exit.addActionListener(new ButtonClickListener());
 
-        ImageIcon mainImg = new ImageIcon("test.png");
-        JLabel img_label = new JLabel(mainImg);
-
         button_panel.add(createHero);
         button_panel.add(loadHero);
         button_panel.add(exit);
 
         GridBagConstraints c = new GridBagConstraints();
-        c.gridx = 1;
-        c.gridheight = 2;
-        c.weighty = 1;
-        c.weightx = 0;
+
+        c.gridx = 0;
+        c.weighty = 5;
         c.fill = GridBagConstraints.VERTICAL;
-        frame.getMainFrame().add(new JLabel("Welcome to Swingy!", JLabel.CENTER ), c);
-//        c.gridx = 1;
-//        c.gridheight = 2;
-//        c.weighty = 1;
-//        c.weightx = 0;
-//        c.fill = GridBagConstraints.VERTICAL;
-//        frame.getMainFrame().add(img_label, c);
-        c.gridx = 1;
-        c.gridheight = 2;
+        JLabel text = frame.create_text("Welcome to Swingy!", 22);
+        frame.getMainFrame().add(text, c);
+
         c.weighty = 1;
-        c.weightx = 0;
-        c.fill = GridBagConstraints.VERTICAL;
         frame.getMainFrame().add(button_panel, c);
+
+        c.weighty = 5;
+        text = frame.create_text("by atomatoe!", 22);
+        frame.getMainFrame().add(text, c);
+
         frame.getMainFrame().setVisible(true);
     }
 

@@ -1,6 +1,7 @@
 package Model;
 
 public class Hero {
+    private String photo;
     private String name;
     private String HeroClass;
     private int lvl;
@@ -10,7 +11,7 @@ public class Hero {
     private int hitPoints;
 
     private Hero() { }
-    public Hero(String name, String HeroClass, int attack, int defence, int hp) {
+    public Hero(String name, String HeroClass, int attack, int defence, int hp, String photo) {
         this.name = name;
         this.HeroClass = HeroClass;
         this.attack = attack;
@@ -18,8 +19,10 @@ public class Hero {
         this.hitPoints = hp;
         this.lvl = 0;
         this.exp = 0;
+        this.photo = photo;
     }
 
+    public String getPhoto() { return photo; }
     public String getName() { return name; }
     public String getHeroClass() { return HeroClass; }
     public int getLvl() { return lvl; }

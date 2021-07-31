@@ -5,23 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/DateBaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/mainPage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DBcontroller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GUIcontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hero1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hero2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hero3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/CreateHero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/LoadHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/LoadHero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHero$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHero$ButtonClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHero.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/LoadHero.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/MainWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/MainWindow$ButtonClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/MainWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateHeroPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateHeroPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/CreateHero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/LoadHero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/MainWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Window.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHeroPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/CreateHeroPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/MainPage$ButtonClickListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/MainPage$ButtonClickListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/CreateHero$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/CreateHero$ButtonClickListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/CreateHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/LoadHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/MainWindow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/MainWindow$ButtonClickListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/MainWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +67,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
