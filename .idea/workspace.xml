@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/mainPage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hero1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hero2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hero3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateHeroPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateHeroPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/CreateHero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/LoadHero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/MainWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/GameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Window.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHeroPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/CreateHeroPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/MainPage$ButtonClickListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/MainPage$ButtonClickListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/CreateHero$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/CreateHero$ButtonClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/CreateHero.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/LoadHero.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/MainWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/MainWindow$ButtonClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/MainWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" />
-    </list>
+    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="upd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,6 +76,21 @@
       <option name="presentableId" value="Default" />
       <updated>1627575732642</updated>
     </task>
+    <task id="LOCAL-00001" summary="upd">
+      <created>1627763836174</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627763836174</updated>
+    </task>
+    <task id="LOCAL-00002" summary="upd">
+      <created>1627763937844</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627763937844</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,5 +104,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd" />
   </component>
 </project>
