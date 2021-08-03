@@ -19,16 +19,31 @@ public class CreateHeroPage {
     public static CreateHeroPage getInstance() {
         if(instance == null) {
             instance = new CreateHeroPage();
-            Hero hero1 = new Hero("Trios", "Warrior", 30, 20, 10,
-                    "./src/main/resources/images/Warrior.gif");
-            Hero hero2 = new Hero("Maven", "Rogue", 40, 10, 10,
-                    "./src/main/resources/images/Rogue.gif");
-            Hero hero3 = new Hero("Alex", "Mage", 30, 10, 20,
-                    "./src/main/resources/images/Mage.gif");
-            Hero hero4 = new Hero("Storm", "Paladin", 10, 30, 20,
-                    "./src/main/resources/images/Paladin.gif");
-            Hero hero5 = new Hero("Tremor", "Ork", 10, 10, 40,
-                    "./src/main/resources/images/Ork.gif");
+            Hero hero1 = new Hero("Trios", "Warrior", 15, 10, 5,
+                    "./src/main/resources/images/heroes/Warrior/face.png", 0, 0, 0, 0,
+                    "./src/main/resources/images/heroes/Warrior/left.png",
+                    "./src/main/resources/images/heroes/Warrior/right.png",
+                    "./src/main/resources/images/heroes/Warrior/behind.png");
+            Hero hero2 = new Hero("Maven", "Rogue", 20, 5, 5,
+                    "./src/main/resources/images/heroes/Rogue/face.png", 0, 0, 0, 0,
+                    "./src/main/resources/images/heroes/Rogue/left.png",
+                    "./src/main/resources/images/heroes/Rogue/right.png",
+                    "./src/main/resources/images/heroes/Rogue/behind.png");
+            Hero hero3 = new Hero("Alex", "Mage", 15, 5, 10,
+                    "./src/main/resources/images/heroes/Mage/face.png", 0, 0, 0, 0,
+                    "./src/main/resources/images/heroes/Mage/left.png",
+                    "./src/main/resources/images/heroes/Mage/right.png",
+                    "./src/main/resources/images/heroes/Mage/behind.png");
+            Hero hero4 = new Hero("Storm", "Paladin", 5, 15, 10,
+                    "./src/main/resources/images/heroes/Paladin/face.png", 0, 0, 0, 0,
+                    "./src/main/resources/images/heroes/Paladin/left.png",
+                    "./src/main/resources/images/heroes/Paladin/right.png",
+                    "./src/main/resources/images/heroes/Paladin/behind.png");
+            Hero hero5 = new Hero("Tremor", "Druid", 5, 5, 20,
+                    "./src/main/resources/images/heroes/Druid/face.png", 0, 0, 0, 0,
+                    "./src/main/resources/images/heroes/Druid/left.png",
+                    "./src/main/resources/images/heroes/Druid/right.png",
+                    "./src/main/resources/images/heroes/Druid/behind.png");
             hero_list = new ArrayList<Hero>();
             hero_list.add(hero1);
             hero_list.add(hero2);
@@ -42,7 +57,7 @@ public class CreateHeroPage {
 
     public void paint_page() {
         Window frame = Window.getInstance();
-        frame.create_background("./src/main/resources/images/createHeroPage.png");
+        frame.create_background("./src/main/resources/images/pages/createHeroPage.png");
 
         JPanel button_panel = new JPanel();
         button_panel.setOpaque(false); // убираем белый цвет на jpanel кнопок
@@ -124,10 +139,20 @@ public class CreateHeroPage {
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();
             Window frame = Window.getInstance();
+            int coordinates_start = (0 - 1) * 5 + 10;
+            coordinates_start /= 2;
             if (command.equals("Create hero")) {
-                System.out.println("CREATE !!!");
+                GameController.getInstance().create_currentHero(hero_list.get(current_hero).getName(),
+                        hero_list.get(current_hero).getHeroClass(),hero_list.get(current_hero).getAttack(),
+                        hero_list.get(current_hero).getDefence(), hero_list.get(current_hero).getHitPoints(),
+                        hero_list.get(current_hero).getPhoto(), hero_list.get(current_hero).getLvl(),
+                        hero_list.get(current_hero).getExp(), coordinates_start , coordinates_start,
+                        hero_list.get(current_hero).getPhoto_left(), hero_list.get(current_hero).getPhoto_right(),
+                        hero_list.get(current_hero).getPhoto_behind());
+                GameController.getInstance().stage_Game();
             } else if (command.equals("Back")) {
                 System.out.println("Back");
+                frame.clear_window();
                 GameController.getInstance().stage_main();
             } else if (command.equals("Next")) {
                 System.out.println("Next");

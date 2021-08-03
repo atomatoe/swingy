@@ -22,7 +22,7 @@ public class MainPage {
 
     public void paint_page() {
         Window frame = Window.getInstance();
-        frame.create_background("./src/main/resources/images/mainPage.png");
+        frame.create_background("./src/main/resources/images/pages/mainPage.png");
 
         JPanel button_panel = new JPanel();
         button_panel.setOpaque(false); // убираем белый цвет на jpanel кнопок
