@@ -1,11 +1,9 @@
 package Model;
 
 import Controller.GameController;
-import View.GamePage;
+import View.GUI.GamePage;
 
-import javax.smartcardio.ATR;
 import java.awt.event.KeyEvent;
-import java.util.Random;
 
 public class Hero {
     private String photo;

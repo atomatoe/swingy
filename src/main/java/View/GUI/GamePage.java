@@ -1,7 +1,6 @@
-package View;
+package View.GUI;
 
 import Controller.GameController;
-import Model.Artifact;
 import Model.Hero;
 import Model.Window;
 

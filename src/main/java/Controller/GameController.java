@@ -3,12 +3,15 @@ package Controller;
 import Model.Artifact;
 import Model.Hero;
 import Model.Window;
-import View.Battle;
-import View.CreateHeroPage;
-import View.GamePage;
-import View.MainPage;
+import View.Console.Battle_C;
+import View.Console.CreateHeroPage_C;
+import View.Console.GamePage_C;
+import View.Console.MainPage_C;
+import View.GUI.Battle;
+import View.GUI.CreateHeroPage;
+import View.GUI.GamePage;
+import View.GUI.MainPage;
 
-import javax.swing.*;
 import java.util.Random;
 
 
@@ -23,6 +26,31 @@ public class GameController {
             instance = new GameController();
         }
         return instance;
+    }
+
+    public void stage_main_console() {
+        MainPage_C mainPage = MainPage_C.getInstance();
+        mainPage.paint_page();
+    }
+
+    public void stage_CreateHero_console() {
+        CreateHeroPage_C createHeroPage = CreateHeroPage_C.getInstance();
+        createHeroPage.paint_page();
+    }
+
+    public void stage_LoadHero_console() {
+//        View.Console.LoadHeroPage loadHeroPage = View.Console.LoadHeroPage.getInstance();
+//        loadHeroPage.paint_page();
+    }
+
+    public void stage_Battle_console(Hero enemy) {
+        Battle_C battlePage = Battle_C.getInstance();
+        battlePage.paint_page(enemy, get_winner(enemy));
+    }
+
+    public void stage_Game_console() {
+        GamePage_C gamePage = GamePage_C.getInstance();
+        gamePage.paint_page();
     }
 
     public void stage_main() {
@@ -133,5 +161,10 @@ public class GameController {
             return artifact;
         }
         return null;
+    }
+
+    public void error(String text) {
+        System.out.println(text);
+        System.exit(-1);
     }
 }

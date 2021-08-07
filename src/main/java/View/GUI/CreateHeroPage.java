@@ -1,4 +1,4 @@
-package View;
+package View.GUI;
 
 import Controller.GameController;
 import Model.Hero;

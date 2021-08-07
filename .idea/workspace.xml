@@ -9,28 +9,26 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateHeroPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CreateHeroPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GamePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Mage.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Ork.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Paladin.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Rogue.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Warrior.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/createHeroPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/mainPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateHeroPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/CreateHeroPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/Program.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Model/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Hero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHeroPage$ButtonClickListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/CreateHeroPage$ButtonClickListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHeroPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/CreateHeroPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/Mage.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/Ork.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/Paladin.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/Rogue.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/Warrior.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/createHeroPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/mainPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/Battle$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/Battle$ButtonClickListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/Battle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHeroPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHeroPage$ButtonClickListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHeroPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/GamePage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/GamePage$ButtonClickListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/GamePage$MyKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/GamePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/MainPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/MainPage$ButtonClickListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/MainPage.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +77,7 @@
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controller.Program" />
       <module name="swingy" />
+      <option name="PROGRAM_PARAMETERS" value="gui" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Controller.*" />
