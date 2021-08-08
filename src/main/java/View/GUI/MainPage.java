@@ -65,10 +65,8 @@ public class MainPage {
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();
             if (command.equals("Create hero")) {
-                System.out.println("CREATE HERO");
                 GameController.getInstance().stage_CreateHero();
             } else if (command.equals("Load hero")) {
-                System.out.println("LOAD HERO");
                 GameController.getInstance().stage_LoadHero();
             } else {
                 System.exit(0);

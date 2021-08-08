@@ -414,7 +414,6 @@ public class Battle {
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();
             if (command.equals("Battle")) {
-                System.out.println("Continue battle!");
                 if(winner == 1) {
                     print_HeroWin();
                 } else {
@@ -441,7 +440,6 @@ public class Battle {
                     GamePage.getInstance().finish_battle();
                 }
             } else if (command.equals("Finish")) {
-                System.out.println("Finish!");
                 if(winner == 1) {
                     GamePage.getInstance().delete_enemy(GameController.getInstance().getCurrentHero().getCoordinates_x(),
                             GameController.getInstance().getCurrentHero().getCoordinates_y());

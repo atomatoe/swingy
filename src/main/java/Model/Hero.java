@@ -196,4 +196,37 @@ public class Hero {
     }
     public int getAllSteps() { return all_steps; }
     public int getKilledMonsters() { return kill_monsters; }
+
+    public void load_set(String heroPhotoFace, int artifactAxe, int artifactArmor, int artifactHelm, int killed_monsters, int all_steps) {
+        this.photo_face = heroPhotoFace;
+        this.kill_monsters = killed_monsters;
+        this.all_steps = all_steps;
+        Artifact axe = null;
+        Artifact armor = null;
+        Artifact helm = null;
+        if(artifactAxe == 5)
+            axe = new Artifact("./src/main/resources/images/artifacts/Attack/Sword1.png", "Iron Axe", 1, 5, 0, 0);
+        else if(artifactAxe == 10)
+            axe = new Artifact("./src/main/resources/images/artifacts/Attack/Sword2.png", "Axe of power", 1, 10, 0, 0);
+        else if(artifactAxe == 15)
+            axe = new Artifact("./src/main/resources/images/artifacts/Attack/Sword3.png", "Axe of war", 1, 15, 0, 0);
+        if(artifactArmor == 5)
+            armor = new Artifact("./src/main/resources/images/artifacts/Defence/Armor1.png", "Novice armor", 2, 0, 5, 0);
+        else if(artifactArmor == 10)
+            armor = new Artifact("./src/main/resources/images/artifacts/Defence/Armor2.png", "Protective armor", 2, 0, 10, 0);
+        else if(artifactArmor == 15)
+            armor = new Artifact("./src/main/resources/images/artifacts/Defence/Armor3.png", "Armor of the gods", 2, 0, 15, 0);
+        if(artifactHelm == 5)
+            helm = new Artifact("./src/main/resources/images/artifacts/HitPoints/Helm1.png", "Iron helm", 3, 0, 0, 5);
+        else if(artifactHelm == 10)
+            helm = new Artifact("./src/main/resources/images/artifacts/HitPoints/Helm2.png", "Dominator", 3, 0, 0, 10);
+        else if(artifactHelm == 15)
+            helm = new Artifact("./src/main/resources/images/artifacts/HitPoints/Helm3.png", "Helm of legends", 3, 0, 0, 15);
+        if(axe != null)
+            equip_artifact(axe);
+        if(armor != null)
+            equip_artifact(armor);
+        if(helm != null)
+            equip_artifact(helm);
+    }
 }

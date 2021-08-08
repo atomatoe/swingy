@@ -7,28 +7,15 @@
     <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="upd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/Battle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/CreateHeroPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/CreateHeroPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/GameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Hero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/Battle$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/Battle$ButtonClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/Battle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHeroPage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHeroPage$ButtonClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/CreateHeroPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/GamePage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/GamePage$ButtonClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/GamePage$MyKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/GamePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/MainPage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/MainPage$ButtonClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/MainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/Battle_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/Battle_C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/CreateHeroPage_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/CreateHeroPage_C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/GamePage_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/GamePage_C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/MainPage_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/MainPage_C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/CreateHeroPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/CreateHeroPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/MainPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +58,10 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/images/other" />
       <recent name="$PROJECT_DIR$/src/main/resources/images" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="View.Console" />
+      <recent name="View.GUI" />
     </key>
   </component>
   <component name="RunManager">
@@ -131,7 +122,28 @@
       <option name="project" value="LOCAL" />
       <updated>1627764137031</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="upd">
+      <created>1628370413280</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1628370413280</updated>
+    </task>
+    <task id="LOCAL-00006" summary="upd">
+      <created>1628370490921</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628370490921</updated>
+    </task>
+    <task id="LOCAL-00007" summary="upd">
+      <created>1628370570960</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1628370570960</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

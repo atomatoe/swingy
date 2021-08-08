@@ -2,6 +2,9 @@ package View.Console;
 
 import Controller.GameController;
 import Model.Hero;
+import Model.Window;
+import View.GUI.GamePage;
+import View.GUI.MainPage;
 
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
@@ -175,6 +178,7 @@ public class GamePage_C {
 
     private void print_menu() {
         Scanner scanner = new Scanner(System.in);
+        Hero enemy = null;
         int answer = 0;
         while (true) {
             System.out.println("1) Left");
@@ -182,6 +186,8 @@ public class GamePage_C {
             System.out.println("3) Up");
             System.out.println("4) Down");
             System.out.println("5) Save");
+            System.out.println("6) Go to GUI");
+            System.out.println("7) Exit");
             try {
                 answer = scanner.nextInt();
             } catch (Exception e) {
@@ -198,17 +204,34 @@ public class GamePage_C {
                     key = KeyEvent.VK_S;
                 GameController.getInstance().getCurrentHero().moving(key, size);
                 enemy_move();
-                Hero enemy = getEnemyToPosition(GameController.getInstance().getCurrentHero().getCoordinates_x(),
+                enemy = getEnemyToPosition(GameController.getInstance().getCurrentHero().getCoordinates_x(),
                         GameController.getInstance().getCurrentHero().getCoordinates_y());
-                if(enemy != null) {
-                    GameController.getInstance().stage_Battle_console(enemy);
-                } else
-                    paint_page();
+                break;
             } else if(answer == 5) {
-                System.out.println("Save hero!");
+                break;
+            } else if(answer == 6) {
+                break;
+            } else if(answer == 7) {
+                System.exit(0);
             } else {
                 System.out.println("Error argument!");
             }
+        }
+        if(answer == 5) {
+            System.out.println("Hero saved!");
+            GameController.getInstance().save_Hero();
+            paint_page();
+        } else if(answer > 0 && answer < 5) {
+            if(enemy != null) {
+                GameController.getInstance().stage_Battle_console(enemy);
+            } else
+                paint_page();
+        } else if(answer == 6) {
+            GameController.getInstance().stage_main();
+            GameController.getInstance().stage_CreateHero();
+            GamePage gamePage = GamePage.getInstance();
+            gamePage.from_console(enemy_list);
+            GameController.getInstance().stage_Game();
         }
     }
 

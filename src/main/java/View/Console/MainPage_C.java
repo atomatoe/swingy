@@ -19,19 +19,29 @@ public class MainPage_C {
     public void paint_page() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("Welcome to Swingy!\n----------\n1) Create hero\n2) Load hero\n----------\nby atomatoe!");
+            System.out.println("Welcome to Swingy!\n----------\n1) Create hero\n2) Load hero\n3) Exit\n----------\nby atomatoe!");
             try {
                 answer = scanner.nextInt();
             } catch (Exception e) {
                 GameController.getInstance().error("Error argument!");
             } if(answer == 1) {
-                GameController.getInstance().stage_CreateHero_console();
+                break;
             } else if(answer == 2) {
-                System.out.print("\033[H\033[2J");
-                System.out.flush();
-                GameController.getInstance().stage_LoadHero_console();
-            } else
+                break;
+            } else if(answer == 3)
+                System.exit(0);
+            else
                 System.out.println("Error argument!");
+        }
+        if(answer == 1) {
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
+            GameController.getInstance().stage_CreateHero_console();
+        }
+        if(answer == 2) {
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
+            GameController.getInstance().stage_LoadHero_console();
         }
     }
 }

@@ -33,7 +33,10 @@ public class GamePage {
         }
         return instance;
     }
-
+    public void from_console(ArrayList<Hero> enemy_list) {
+        this.first_generate = 1;
+        this.enemy_list = enemy_list;
+    }
     public void paint_page() {
         Window frame = Window.getInstance();
         frame.getMainFrame().setFocusable(true);
@@ -138,7 +141,6 @@ public class GamePage {
         int textures_size = ((Window.getInstance().getMainFrame().getWidth() / 3) * 2) / (size + 1);
         for(int i = 0; i < GameController.getInstance().getCurrentHero().getLvl() + 2; i++) {
             enemy = generate_enemy(GameController.getInstance().getCurrentHero().getLvl());
-//            System.out.println("Enemy generated! Name = " + enemy.getName() + ". Attack = " + enemy.getAttack() + ". Defence = " + enemy.getDefence() + ". HP = " + enemy.getHitPoints());
             try {
                 BufferedImage logo = ImageIO.read(new File("./src/main/resources/images/textures/grass/grass4.png"));
                 BufferedImage source = ImageIO.read(new File(enemy.getPhoto()));
@@ -152,6 +154,7 @@ public class GamePage {
                 enemy_list.add(enemy);
             } catch (Exception e) {
                 System.out.println("ERROR paint_enemy_neutrals1");
+                System.exit(-1);
             }
         }
         return (map);
@@ -273,11 +276,26 @@ public class GamePage {
         imageIcon = new ImageIcon(newHeroImg);
         game.add(new JLabel(imageIcon), cont);
 
+        JPanel button_panel = new JPanel();
+        button_panel.setOpaque(false); // убираем белый цвет на jpanel кнопок
+        button_panel.setLayout(new FlowLayout());
         JButton save = frame.create_button("Save", 16);
         save.setActionCommand("Save");
         save.addActionListener(new GamePage.ButtonClickListener());
+        button_panel.add(save);
+
+        JButton console = frame.create_button("Console", 16);
+        console.setActionCommand("Console");
+        console.addActionListener(new GamePage.ButtonClickListener());
+        button_panel.add(console);
+
+        JButton exit = frame.create_button("Exit", 16);
+        exit.setActionCommand("Exit");
+        exit.addActionListener(new GamePage.ButtonClickListener());
+        button_panel.add(exit);
+
         cont.gridy = 5;
-        game.add(save, cont);
+        game.add(button_panel, cont);
 
         cont.gridy = 7;
         text = frame.create_text("Name: " + GameController.getInstance().getCurrentHero().getName(), 16);
@@ -407,8 +425,17 @@ public class GamePage {
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();
             if (command.equals("Save")) {
-                System.out.println("SAVE HERO");
-            }
+                GameController.getInstance().save_Hero();
+                render();
+            } else if(command.equals("Console")) {
+                Window.getInstance().clear_window();
+                Window.getInstance().getMainFrame().setVisible(false);
+                Window frame = Window.getInstance();
+                frame.getMainFrame().removeKeyListener(board_signal);
+//                Window.getInstance().getMainFrame().dispose();
+                GameController.getInstance().stage_Game_console();
+            } else if(command.equals("Exit"))
+                System.exit(0);
         }
     }
 

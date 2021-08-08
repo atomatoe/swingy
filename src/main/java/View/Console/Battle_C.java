@@ -55,15 +55,20 @@ public class Battle_C {
             } catch (Exception e) {
                 GameController.getInstance().error("Error argument!");
             } if(answer == 1) {
-                if(winner == 1) {
-                    print_HeroWin();
-                } else {
-                    print_HeroLose();
-                }
+                break;
             } else if(answer == 2) {
-                hero_run();
+                break;
             } else
                 System.out.println("Error arguments!");
+        }
+        if(answer == 1) {
+            if(winner == 1) {
+                print_HeroWin();
+            } else {
+                print_HeroLose();
+            }
+        } else if(answer == 2) {
+            hero_run();
         }
     }
 
@@ -116,10 +121,11 @@ public class Battle_C {
             } if(answer == 1) {
                 GamePage_C.getInstance().delete_enemy(GameController.getInstance().getCurrentHero().getCoordinates_x(),
                         GameController.getInstance().getCurrentHero().getCoordinates_y());
-                GamePage_C.getInstance().paint_page();
+                break;
             } else
                 System.out.println("Error argument!");
         }
+        GamePage_C.getInstance().paint_page();
     }
 
     public void print_HeroLose() {
@@ -163,13 +169,5 @@ public class Battle_C {
             } else
                 System.out.println("Error argument!");
         }
-    }
-
-    private String generate_space(String text) {
-        String spaces = "";
-        for(int i = 0; i != text.length(); i++) {
-            spaces += " ";
-        }
-        return spaces;
     }
 }

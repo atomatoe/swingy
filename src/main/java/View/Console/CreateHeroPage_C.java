@@ -78,8 +78,6 @@ public class CreateHeroPage_C {
                 else
                     current_hero++;
             } else if(answer == 3) {
-                System.out.print("\033[H\033[2J");
-                System.out.flush();
                 int coordinates_start = (0 - 1) * 5 + 10;
                 coordinates_start /= 2;
                 GameController.getInstance().create_currentHero(hero_list.get(current_hero).getName(),
@@ -89,13 +87,20 @@ public class CreateHeroPage_C {
                             hero_list.get(current_hero).getExp(), coordinates_start , coordinates_start,
                             hero_list.get(current_hero).getPhoto_left(), hero_list.get(current_hero).getPhoto_right(),
                             hero_list.get(current_hero).getPhoto_behind());
-                GameController.getInstance().stage_Game_console();
+                break;
             } else if(answer == 4) {
-                System.out.print("\033[H\033[2J");
-                System.out.flush();
-                GameController.getInstance().stage_main_console();
+                break;
             } else
                 System.out.println("Error argument!");
+        }
+        if(answer == 3) {
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
+            GameController.getInstance().stage_Game_console();
+        } else if(answer == 4) {
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
+            GameController.getInstance().stage_main_console();
         }
     }
 }

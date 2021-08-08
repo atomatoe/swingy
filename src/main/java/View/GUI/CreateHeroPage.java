@@ -151,11 +151,9 @@ public class CreateHeroPage {
                         hero_list.get(current_hero).getPhoto_behind());
                 GameController.getInstance().stage_Game();
             } else if (command.equals("Back")) {
-                System.out.println("Back");
                 frame.clear_window();
                 GameController.getInstance().stage_main();
             } else if (command.equals("Next")) {
-                System.out.println("Next");
                 if(current_hero == (hero_list.size() - 1))
                     current_hero = 0;
                 else
@@ -163,7 +161,6 @@ public class CreateHeroPage {
                 frame.clear_window();
                 paint_page();
             } else if (command.equals("Prev")) {
-                System.out.println("Prev");
                 if(current_hero == 0)
                     current_hero = (hero_list.size() - 1);
                 else
