@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="upd">
+    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="add saves, add console-game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/Battle_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/Battle_C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/CreateHeroPage_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/CreateHeroPage_C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/GamePage_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/GamePage_C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/MainPage_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/MainPage_C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/Battle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/CreateHeroPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/CreateHeroPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,22 +48,34 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/images/other" />
       <recent name="$PROJECT_DIR$/src/main/resources/images" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="View.Console" />
       <recent name="View.GUI" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn clean compile" />
+      <command value="mvn clean install" />
+      <command value="mvn install maven-resources-plugin" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Controller.Program" />
+      <option name="MAIN_CLASS_NAME" value="Program" />
       <module name="swingy" />
       <option name="PROGRAM_PARAMETERS" value="gui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628370570960</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add saves, add console-game">
+      <created>1628452271397</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1628452271403</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +171,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="upd" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd" />
+    <MESSAGE value="add saves, add console-game" />
+    <option name="LAST_COMMIT_MESSAGE" value="add saves, add console-game" />
   </component>
 </project>

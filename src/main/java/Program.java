@@ -1,4 +1,4 @@
-package Controller;
+import Controller.GameController;
 
 public class Program {
     public static void main(String[] args) {
