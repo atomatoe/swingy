@@ -218,15 +218,24 @@ public class GamePage_C {
             }
         }
         if(answer == 5) {
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
             System.out.println("Hero saved!");
             GameController.getInstance().save_Hero();
             paint_page();
         } else if(answer > 0 && answer < 5) {
             if(enemy != null) {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 GameController.getInstance().stage_Battle_console(enemy);
-            } else
+            } else {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 paint_page();
+            }
         } else if(answer == 6) {
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
             GameController.getInstance().stage_main();
             GameController.getInstance().stage_CreateHero();
             GamePage gamePage = GamePage.getInstance();

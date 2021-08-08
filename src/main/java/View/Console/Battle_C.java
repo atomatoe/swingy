@@ -63,11 +63,17 @@ public class Battle_C {
         }
         if(answer == 1) {
             if(winner == 1) {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 print_HeroWin();
             } else {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 print_HeroLose();
             }
         } else if(answer == 2) {
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
             hero_run();
         }
     }
@@ -125,6 +131,8 @@ public class Battle_C {
             } else
                 System.out.println("Error argument!");
         }
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         GamePage_C.getInstance().paint_page();
     }
 

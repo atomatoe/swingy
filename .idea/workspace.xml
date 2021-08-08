@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="add saves, add console-game">
+    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="add manifest, upd pom.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/Battle_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/Battle_C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/CreateHeroPage_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/CreateHeroPage_C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/GamePage_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/GamePage_C.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +66,8 @@
     <option name="myCommands">
       <command value="mvn clean" />
       <command value="mvn clean compile" />
-      <command value="mvn clean install" />
       <command value="mvn install maven-resources-plugin" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunManager">
@@ -154,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628452271403</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add manifest, upd pom.xml">
+      <created>1628453585891</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1628453585891</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +181,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="upd" />
     <MESSAGE value="add saves, add console-game" />
-    <option name="LAST_COMMIT_MESSAGE" value="add saves, add console-game" />
+    <MESSAGE value="add manifest, upd pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add manifest, upd pom.xml" />
   </component>
 </project>

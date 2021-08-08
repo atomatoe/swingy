@@ -56,7 +56,7 @@ public class CreateHeroPage_C {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("--- Create hero ---");
-            System.out.println("Name :" + hero_list.get(current_hero).getName());
+            System.out.println("Name: " + hero_list.get(current_hero).getName());
             System.out.println("Class: " + hero_list.get(current_hero).getHeroClass());
             System.out.println("Attack: " + hero_list.get(current_hero).getAttack());
             System.out.println("Defense: " + hero_list.get(current_hero).getDefence());
@@ -68,11 +68,15 @@ public class CreateHeroPage_C {
             } catch (Exception e) {
                 GameController.getInstance().error("Error argument!");
             } if(answer == 1) {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 if(current_hero == 0)
                     current_hero = (hero_list.size() - 1);
                 else
                     current_hero--;
             } else if(answer == 2) {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 if(current_hero == (hero_list.size() - 1))
                     current_hero = 0;
                 else
