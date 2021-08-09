@@ -310,7 +310,7 @@ public class GameController {
                 files_names.add(files[i].getName());
             }
         Collections.sort(files_names);
-        Collections.reverse(files_names);
+//        Collections.reverse(files_names);
         return files_names;
     }
 
