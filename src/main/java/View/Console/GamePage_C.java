@@ -6,7 +6,12 @@ import Model.Window;
 import View.GUI.GamePage;
 import View.GUI.MainPage;
 
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -20,6 +25,8 @@ public class GamePage_C {
     private static ArrayList<Hero> enemy_list;
     private static int first_generate;
     private static int size;
+    private Hero cave;
+    private Hero crystal;
 
     public static GamePage_C getInstance() {
         if (instance == null) {
@@ -39,12 +46,18 @@ public class GamePage_C {
                 Hero enemy = generate_enemy(GameController.getInstance().getCurrentHero().getLvl());
                 enemy_list.add(enemy);
             }
+            generate_cave_crystal();
         }
         for (int y = 0; y < size; y++) {
             for (int x = 0; x < size; x++) {
                 if (y == GameController.getInstance().getCurrentHero().getCoordinates_y() &&
                         x == GameController.getInstance().getCurrentHero().getCoordinates_x())
                     System.out.print("H");
+                else if(y == cave.getCoordinates_y() && x == cave.getCoordinates_x())
+                    System.out.print("^");
+                else if(GameController.getInstance().getCurrentHero().getLvl() > 5 &&
+                    y == crystal.getCoordinates_y() && x == crystal.getCoordinates_x())
+                    System.out.print("X");
                 else {
                     Hero enemy = getEnemyToPosition(x, y);
                     if (enemy == null)
@@ -228,6 +241,18 @@ public class GamePage_C {
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
                 GameController.getInstance().stage_Battle_console(enemy);
+            } else if(GameController.getInstance().getCurrentHero().getCoordinates_x() == cave.getCoordinates_x()
+                && GameController.getInstance().getCurrentHero().getCoordinates_y() == cave.getCoordinates_y()) {
+                enemy_list.clear();
+                first_generate = 0;
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
+                paint_page();
+            } else if(GameController.getInstance().getCurrentHero().getLvl() > 5 && GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x()
+                    && GameController.getInstance().getCurrentHero().getCoordinates_y() == crystal.getCoordinates_y()) {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
+                Battle_C.getInstance().print_hero_win();
             } else {
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
@@ -270,5 +295,52 @@ public class GamePage_C {
                 return;
             }
         }
+    }
+
+    public void generate_cave_crystal() {
+        Random random = new Random();
+        for(int i = 0; i != 2; i++) {
+            int enemy_x = GameController.getInstance().getCurrentHero().getCoordinates_x();
+            int enemy_y = GameController.getInstance().getCurrentHero().getCoordinates_y();
+            while (enemy_y == GameController.getInstance().getCurrentHero().getCoordinates_y()
+                    && enemy_x == GameController.getInstance().getCurrentHero().getCoordinates_x()) {
+                enemy_x = random.nextInt(size - 1 + 1);
+                enemy_y = random.nextInt(size - 1 + 1);
+                if (getEnemyToPosition(enemy_x, enemy_y) != null || check_coordinates_build(enemy_x, enemy_y)) {
+                    enemy_x = random.nextInt(size - 1 + 1);
+                    enemy_y = random.nextInt(size - 1 + 1);
+                }
+            }
+            if(i == 0) {
+                cave = new Hero("Cave", "Neutral", 0, 0, 0,
+                        "./src/main/resources/images/other/home2.png", 5, 0, enemy_x, enemy_y,
+                        "./src/main/resources/images/other/home2.png", "./src/main/resources/images/other/home2.png",
+                        "./src/main/resources/images/other/home2.png");
+            } else
+                crystal = new Hero("Crystal", "Neutral", 0, 0, 0,
+                        "./src/main/resources/images/other/crystal.png", 10, 0, enemy_x, enemy_y,
+                        "./src/main/resources/images/other/crystal.png", "./src/main/resources/images/other/crystal.png",
+                        "./src/main/resources/images/other/crystal.png");
+        }
+    }
+
+    public boolean check_coordinates_build(int enemy_x, int enemy_y) {
+        if(cave == null && crystal == null)
+            return false;
+        else {
+            if(cave == null) {
+                if(enemy_x == crystal.getCoordinates_x() && enemy_y == crystal.getCoordinates_y())
+                    return true;
+            } if(crystal == null) {
+                if(enemy_x == cave.getCoordinates_x() && enemy_y == cave.getCoordinates_y())
+                    return true;
+            } else {
+                if(enemy_x == cave.getCoordinates_x() && enemy_y == cave.getCoordinates_y())
+                    return true;
+                if(enemy_x == crystal.getCoordinates_x() && enemy_y == crystal.getCoordinates_y())
+                    return true;
+            }
+        }
+        return false;
     }
 }

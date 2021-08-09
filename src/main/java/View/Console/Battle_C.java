@@ -137,7 +137,6 @@ public class Battle_C {
     }
 
     public void print_HeroLose() {
-
         Scanner scanner = new Scanner(System.in);
         int answer = 0;
         System.out.println("You lose :(");
@@ -163,6 +162,53 @@ public class Battle_C {
         } else {
             System.out.println("HitPoints-artifact: empty");
         }
+        System.out.println("Monster killed: " + GameController.getInstance().getCurrentHero().getKilledMonsters());
+        System.out.println("Steps: " + GameController.getInstance().getCurrentHero().getAllSteps());
+
+        while(true) {
+            System.out.println("1) Exit");
+            try {
+                answer = scanner.nextInt();
+            } catch (Exception e) {
+                GameController.getInstance().error("Error argument!");
+            } if(answer == 1) {
+                System.exit(0);
+            } else
+                System.out.println("Error argument!");
+        }
+    }
+
+    public void print_hero_win() {
+        Scanner scanner = new Scanner(System.in);
+        int answer = 0;
+        System.out.println("---------------");
+        System.out.println("\n");
+        System.out.println("!!! You Win !!!");
+        System.out.println("\n");
+        System.out.println("---------------");
+        System.out.println("Name: " + GameController.getInstance().getCurrentHero().getName());
+        System.out.println("Class: " + GameController.getInstance().getCurrentHero().getHeroClass());
+        System.out.println("Attack: " + GameController.getInstance().getCurrentHero().getAttack());
+        System.out.println("Defence: " + GameController.getInstance().getCurrentHero().getDefence());
+        System.out.println("HitPoints: " + GameController.getInstance().getCurrentHero().getHitPoints());
+        System.out.println("Lvl: " + GameController.getInstance().getCurrentHero().getLvl());
+        System.out.println("Exp: " + GameController.getInstance().getCurrentHero().getExp());
+        if(GameController.getInstance().getCurrentHero().getAxe() != null) {
+            System.out.println("Attack-artifact: " + GameController.getInstance().getCurrentHero().getAxe().getName());
+        } else {
+            System.out.println("Attack-artifact: empty");
+        }
+        if(GameController.getInstance().getCurrentHero().getArmor() != null) {
+            System.out.println("Defense-artifact: " + GameController.getInstance().getCurrentHero().getArmor().getName());
+        } else {
+            System.out.println("Defense-artifact: empty");
+        }
+        if(GameController.getInstance().getCurrentHero().getHelm() != null) {
+            System.out.println("HitPoints-artifact: " + GameController.getInstance().getCurrentHero().getHelm().getName());
+        } else {
+            System.out.println("HitPoints-artifact: empty");
+        }
+        System.out.println("---------------");
         System.out.println("Monster killed: " + GameController.getInstance().getCurrentHero().getKilledMonsters());
         System.out.println("Steps: " + GameController.getInstance().getCurrentHero().getAllSteps());
 
