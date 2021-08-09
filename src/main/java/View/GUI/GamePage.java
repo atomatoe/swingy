@@ -23,6 +23,8 @@ public class GamePage {
     private static int first_generate;
     private static int size;
     private static MyKey board_signal;
+    private Hero cave;
+    private Hero crystal;
 
     public static GamePage getInstance() {
         if(instance == null) {
@@ -131,6 +133,31 @@ public class GamePage {
                 System.out.println("Error paint_saved!");
             }
         }
+        try {
+            BufferedImage logo = ImageIO.read(new File("./src/main/resources/images/textures/grass/grass4.png"));
+            BufferedImage source = ImageIO.read(new File(cave.getPhoto()));
+
+            logo.getGraphics().drawImage(source, 0, 0, null);
+            Image newimgAvatar = logo.getScaledInstance(textures_size, textures_size, java.awt.Image.SCALE_SMOOTH);
+            avatarIcon = new ImageIcon(newimgAvatar);
+            c.gridx = cave.getCoordinates_x();
+            c.gridy = cave.getCoordinates_y();
+            map.add(new JLabel(avatarIcon), c);
+
+            if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
+            logo = ImageIO.read(new File("./src/main/resources/images/textures/grass/grass4.png"));
+            source = ImageIO.read(new File(crystal.getPhoto()));
+                logo.getGraphics().drawImage(source, 0, 0, null);
+                newimgAvatar = logo.getScaledInstance(textures_size, textures_size, java.awt.Image.SCALE_SMOOTH);
+                avatarIcon = new ImageIcon(newimgAvatar);
+                c.gridx = crystal.getCoordinates_x();
+                c.gridy = crystal.getCoordinates_y();
+                map.add(new JLabel(avatarIcon), c);
+            }
+        } catch (Exception e) {
+            System.out.println("ERROR paint_enemy_neutrals1");
+            System.exit(-1);
+        }
         return(map);
     }
 
@@ -157,6 +184,7 @@ public class GamePage {
                 System.exit(-1);
             }
         }
+        map = generate_cave_crystal(map);
         return (map);
     }
 
@@ -166,6 +194,82 @@ public class GamePage {
                 return(enemy_list.get(i));
         }
         return(null);
+    }
+
+    public JPanel generate_cave_crystal(JPanel map) {
+        Random random = new Random();
+        for(int i = 0; i != 2; i++) {
+            int enemy_x = GameController.getInstance().getCurrentHero().getCoordinates_x();
+            int enemy_y = GameController.getInstance().getCurrentHero().getCoordinates_y();
+            while (enemy_y == GameController.getInstance().getCurrentHero().getCoordinates_y()
+                    && enemy_x == GameController.getInstance().getCurrentHero().getCoordinates_x()) {
+                enemy_x = random.nextInt(size - 1 + 1);
+                enemy_y = random.nextInt(size - 1 + 1);
+                if (getEnemyToPosition(enemy_x, enemy_y) != null || check_coordinates_build(enemy_x, enemy_y)) {
+                    enemy_x = random.nextInt(size - 1 + 1);
+                    enemy_y = random.nextInt(size - 1 + 1);
+                }
+            }
+            if(i == 0) {
+                cave = new Hero("Cave", "Neutral", 0, 0, 0,
+                        "./src/main/resources/images/other/home2.png", 5, 0, enemy_x, enemy_y,
+                        "./src/main/resources/images/other/home2.png", "./src/main/resources/images/other/home2.png",
+                        "./src/main/resources/images/other/home2.png");
+            } else
+                crystal = new Hero("Crystal", "Neutral", 0, 0, 0,
+                        "./src/main/resources/images/other/crystal.png", 10, 0, enemy_x, enemy_y,
+                        "./src/main/resources/images/other/crystal.png", "./src/main/resources/images/other/crystal.png",
+                        "./src/main/resources/images/other/crystal.png");
+        }
+        GridBagConstraints c = new GridBagConstraints();
+        ImageIcon avatarIcon = null;
+        int textures_size = ((Window.getInstance().getMainFrame().getWidth() / 3) * 2) / (size + 1);
+        try {
+            BufferedImage logo = ImageIO.read(new File("./src/main/resources/images/textures/grass/grass4.png"));
+            BufferedImage source = ImageIO.read(new File(cave.getPhoto()));
+
+            logo.getGraphics().drawImage(source, 0, 0, null);
+            Image newimgAvatar = logo.getScaledInstance(textures_size, textures_size, java.awt.Image.SCALE_SMOOTH);
+            avatarIcon = new ImageIcon(newimgAvatar);
+            c.gridx = cave.getCoordinates_x();
+            c.gridy = cave.getCoordinates_y();
+            map.add(new JLabel(avatarIcon), c);
+
+            if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
+                logo = ImageIO.read(new File("./src/main/resources/images/textures/grass/grass4.png"));
+                source = ImageIO.read(new File(crystal.getPhoto()));
+                logo.getGraphics().drawImage(source, 0, 0, null);
+                newimgAvatar = logo.getScaledInstance(textures_size, textures_size, java.awt.Image.SCALE_SMOOTH);
+                avatarIcon = new ImageIcon(newimgAvatar);
+                c.gridx = crystal.getCoordinates_x();
+                c.gridy = crystal.getCoordinates_y();
+                map.add(new JLabel(avatarIcon), c);
+            }
+        } catch (Exception e) {
+            System.out.println("ERROR paint_enemy_neutrals1");
+            System.exit(-1);
+        }
+        return map;
+    }
+
+    public boolean check_coordinates_build(int enemy_x, int enemy_y) {
+        if(cave == null && crystal == null)
+            return false;
+        else {
+            if(cave == null) {
+                if(enemy_x == crystal.getCoordinates_x() && enemy_y == crystal.getCoordinates_y())
+                    return true;
+            } if(crystal == null) {
+                if(enemy_x == cave.getCoordinates_x() && enemy_y == cave.getCoordinates_y())
+                    return true;
+            } else {
+                if(enemy_x == cave.getCoordinates_x() && enemy_y == cave.getCoordinates_y())
+                    return true;
+                if(enemy_x == crystal.getCoordinates_x() && enemy_y == crystal.getCoordinates_y())
+                    return true;
+            }
+        }
+        return false;
     }
 
     private Hero generate_enemy(int lvl) {
@@ -377,16 +481,6 @@ public class GamePage {
         render();
     }
 
-    private int get_textures_size(int lvl) {
-        int start_size = 50;
-        for(int i = 0; i != lvl; i++) {
-            if(lvl > 9)
-                return(1);
-            start_size -= 5;
-        }
-        return (start_size);
-    }
-
     public ImageIcon create_img(String photo, int size_x, int size_y) {
         ImageIcon artifactIcon = new ImageIcon(photo);
         Image artifactImage = artifactIcon.getImage();
@@ -462,6 +556,17 @@ public class GamePage {
                     frame.getMainFrame().removeKeyListener(board_signal);
                     GameController.getInstance().stage_Battle(enemy);
                     return;
+                } else if(GameController.getInstance().getCurrentHero().getCoordinates_x() == cave.getCoordinates_x() &&
+                        GameController.getInstance().getCurrentHero().getCoordinates_y() == cave.getCoordinates_y()) {
+                    enemy_list.clear();
+                    first_generate = 0;
+                    render();
+                } else if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
+                    if(GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
+                            GameController.getInstance().getCurrentHero().getCoordinates_y() == crystal.getCoordinates_y()) {
+                        frame.getMainFrame().removeKeyListener(board_signal);
+                        Battle.getInstance().paint_win();
+                    }
                 }
             }
             else if (e.getKeyCode() == KeyEvent.VK_S) {
@@ -474,6 +579,17 @@ public class GamePage {
                     frame.getMainFrame().removeKeyListener(board_signal);
                     GameController.getInstance().stage_Battle(enemy);
                     return;
+                } else if(GameController.getInstance().getCurrentHero().getCoordinates_x() == cave.getCoordinates_x() &&
+                        GameController.getInstance().getCurrentHero().getCoordinates_y() == cave.getCoordinates_y()) {
+                    enemy_list.clear();
+                    first_generate = 0;
+                    render();
+                } else if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
+                    if(GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
+                            GameController.getInstance().getCurrentHero().getCoordinates_y() == crystal.getCoordinates_y()) {
+                        frame.getMainFrame().removeKeyListener(board_signal);
+                        Battle.getInstance().paint_win();
+                    }
                 }
             }
             else if (e.getKeyCode() == KeyEvent.VK_D) {
@@ -486,6 +602,17 @@ public class GamePage {
                     frame.getMainFrame().removeKeyListener(board_signal);
                     GameController.getInstance().stage_Battle(enemy);
                     return;
+                } else if(GameController.getInstance().getCurrentHero().getCoordinates_x() == cave.getCoordinates_x() &&
+                        GameController.getInstance().getCurrentHero().getCoordinates_y() == cave.getCoordinates_y()) {
+                    enemy_list.clear();
+                    first_generate = 0;
+                    render();
+                } else if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
+                    if(GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
+                            GameController.getInstance().getCurrentHero().getCoordinates_y() == crystal.getCoordinates_y()) {
+                        frame.getMainFrame().removeKeyListener(board_signal);
+                        Battle.getInstance().paint_win();
+                    }
                 }
             }
             else if (e.getKeyCode() == KeyEvent.VK_A) {
@@ -498,6 +625,17 @@ public class GamePage {
                     frame.getMainFrame().removeKeyListener(board_signal);
                     GameController.getInstance().stage_Battle(enemy);
                     return;
+                } else if(GameController.getInstance().getCurrentHero().getCoordinates_x() == cave.getCoordinates_x() &&
+                        GameController.getInstance().getCurrentHero().getCoordinates_y() == cave.getCoordinates_y()) {
+                    enemy_list.clear();
+                    first_generate = 0;
+                    render();
+                } else if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
+                    if(GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
+                            GameController.getInstance().getCurrentHero().getCoordinates_y() == crystal.getCoordinates_y()) {
+                        frame.getMainFrame().removeKeyListener(board_signal);
+                        Battle.getInstance().paint_win();
+                    }
                 }
             }
         }

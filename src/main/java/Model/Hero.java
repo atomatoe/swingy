@@ -73,7 +73,8 @@ public class Hero {
         if (code == KeyEvent.VK_W) {
             if((coordinates_y - 1) >= 0) {
                 if(HeroClass.contains("Enemy") || HeroClass.contains("Neutral")) {
-                    if(GamePage.getInstance().getEnemyToPosition(coordinates_x, coordinates_y - 1) != null)
+                    if(GamePage.getInstance().getEnemyToPosition(coordinates_x, coordinates_y - 1) != null
+                    || GamePage.getInstance().check_coordinates_build(coordinates_x, coordinates_y - 1))
                         return;
                 }
                 coordinates_y--;
@@ -84,7 +85,8 @@ public class Hero {
         if (code == KeyEvent.VK_S) {
             if((coordinates_y + 1) <= (size - 1)) {
                 if(HeroClass.contains("Enemy") || HeroClass.contains("Neutral")) {
-                    if(GamePage.getInstance().getEnemyToPosition(coordinates_x, coordinates_y + 1) != null)
+                    if(GamePage.getInstance().getEnemyToPosition(coordinates_x, coordinates_y + 1) != null
+                            || GamePage.getInstance().check_coordinates_build(coordinates_x, coordinates_y + 1))
                         return;
                 }
                 coordinates_y++;
@@ -95,7 +97,8 @@ public class Hero {
         if (code == KeyEvent.VK_D) {
             if((coordinates_x + 1) <= (size - 1)) {
                 if(HeroClass.contains("Enemy") || HeroClass.contains("Neutral")) {
-                    if(GamePage.getInstance().getEnemyToPosition(coordinates_x + 1, coordinates_y) != null) {
+                    if(GamePage.getInstance().getEnemyToPosition(coordinates_x + 1, coordinates_y) != null
+                            || GamePage.getInstance().check_coordinates_build(coordinates_x + 1, coordinates_y)) {
                         return;
                     }
                 }
@@ -107,7 +110,8 @@ public class Hero {
         if (code == KeyEvent.VK_A) {
             if(((coordinates_x - 1) >= 0)) {
                 if(HeroClass.contains("Enemy") || HeroClass.contains("Neutral")) {
-                    if(GamePage.getInstance().getEnemyToPosition(coordinates_x - 1, coordinates_y) != null)
+                    if(GamePage.getInstance().getEnemyToPosition(coordinates_x - 1, coordinates_y) != null
+                            || GamePage.getInstance().check_coordinates_build(coordinates_x - 1, coordinates_y))
                         return;
                 }
                 coordinates_x--;

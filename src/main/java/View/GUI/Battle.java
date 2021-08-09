@@ -410,6 +410,99 @@ public class Battle {
         frame.getMainFrame().setVisible(true);
     }
 
+    public void paint_win() {
+        Window.getInstance().clear_window();
+        Window frame = Window.getInstance();
+        frame.create_background("./src/main/resources/images/pages/gameOver2.jpeg");
+
+        JPanel button_panel = new JPanel();
+        button_panel.setOpaque(false); // убираем белый цвет на jpanel кнопок
+        button_panel.setLayout(new FlowLayout());
+
+        JButton createHero = frame.create_button("Exit", 16);
+        createHero.setActionCommand("Exit");
+        createHero.addActionListener(new Battle.ButtonClickListener());
+        button_panel.add(createHero);
+
+        GridBagConstraints c = new GridBagConstraints();
+
+        c.gridx = 0;
+        c.gridy = 1;
+        c.fill = GridBagConstraints.VERTICAL;
+        JLabel text = frame.create_text("Game over! You win!", 35);
+        frame.getMainFrame().add(text, c);
+
+        c.gridy = 2;
+        ImageIcon imageIcon = new ImageIcon(GameController.getInstance().getCurrentHero().getPhoto_face()); // load the image to a imageIcon
+        Image image = imageIcon.getImage();
+        Image newimg = image.getScaledInstance(150, 150,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way
+        imageIcon = new ImageIcon(newimg);
+        frame.getMainFrame().add(new JLabel(imageIcon), c);
+
+        c.gridy = 3;
+        text = frame.create_text("Name: " + GameController.getInstance().getCurrentHero().getName(), 16);
+        frame.getMainFrame().add(text, c);
+        c.gridy = 4;
+        text = frame.create_text("Class: " + GameController.getInstance().getCurrentHero().getHeroClass(), 16);
+        frame.getMainFrame().add(text, c);
+        c.gridy = 5;
+        text = frame.create_text("Attack: " + GameController.getInstance().getCurrentHero().getAttack(), 16);
+        frame.getMainFrame().add(text, c);
+        c.gridy = 6;
+        text = frame.create_text("Defence: " + GameController.getInstance().getCurrentHero().getDefence(), 16);
+        frame.getMainFrame().add(text, c);
+        c.gridy = 7;
+        text = frame.create_text("HitPoints: " + GameController.getInstance().getCurrentHero().getHitPoints(), 16);
+        frame.getMainFrame().add(text, c);
+        c.gridy = 8;
+        text = frame.create_text("Lvl: " + GameController.getInstance().getCurrentHero().getLvl(), 16);
+        frame.getMainFrame().add(text, c);
+        c.gridy = 9;
+        text = frame.create_text("Exp: " + GameController.getInstance().getCurrentHero().getExp(), 16);
+        frame.getMainFrame().add(text, c);
+        c.gridy = 10;
+        text = frame.create_text("Killed monsters: " + GameController.getInstance().getCurrentHero().getKilledMonsters(), 16);
+        frame.getMainFrame().add(text, c);
+        c.gridy = 11;
+        text = frame.create_text("All steps: " + GameController.getInstance().getCurrentHero().getAllSteps(), 16);
+        frame.getMainFrame().add(text, c);
+
+        int img_size = 40;
+        JPanel inventory_panel = new JPanel();
+        inventory_panel.setOpaque(false); // убираем белый цвет
+        inventory_panel.setLayout(new FlowLayout());
+        ImageIcon artifact = null;
+
+        if(GameController.getInstance().getCurrentHero().getAxe() != null) {
+            artifact = GamePage.getInstance().create_img(GameController.getInstance().getCurrentHero().getAxe().getPhoto(), img_size, img_size);
+        } else {
+            artifact = GamePage.getInstance().create_img("./src/main/resources/images/artifacts/empty.png", img_size, img_size);
+        }
+        inventory_panel.add(new JLabel(artifact));
+
+        if(GameController.getInstance().getCurrentHero().getArmor() != null) {
+            artifact = GamePage.getInstance().create_img(GameController.getInstance().getCurrentHero().getArmor().getPhoto(), img_size, img_size);
+        } else {
+            artifact = GamePage.getInstance().create_img("./src/main/resources/images/artifacts/empty.png", img_size, img_size);
+        }
+        inventory_panel.add(new JLabel(artifact));
+
+        if(GameController.getInstance().getCurrentHero().getHelm() != null) {
+            artifact = GamePage.getInstance().create_img(GameController.getInstance().getCurrentHero().getHelm().getPhoto(), img_size, img_size);
+        } else {
+            artifact = GamePage.getInstance().create_img("./src/main/resources/images/artifacts/empty.png", img_size, img_size);
+        }
+        inventory_panel.add(new JLabel(artifact));
+
+        c.gridy = 12;
+        frame.getMainFrame().add(inventory_panel, c);
+
+        c.gridy = 13;
+        frame.getMainFrame().add(button_panel, c);
+
+        frame.getMainFrame().setVisible(true);
+    }
+
     private class ButtonClickListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();

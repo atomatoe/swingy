@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="add datebase h2. Update pom: jar build dependices (h2).">
+    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="update gui and console view load saves from db/file">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/pages/gameOver.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/pages/gameOver2.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +63,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images/pages" />
       <recent name="$PROJECT_DIR$/src/main/resources/images/other" />
       <recent name="$PROJECT_DIR$/src/main/resources/images" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -189,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628543231302</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update gui and console view load saves from db/file">
+      <created>1628544211031</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1628544211031</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +222,7 @@
     <MESSAGE value="add manifest, upd pom.xml" />
     <MESSAGE value="upd console game: clear console next step in game" />
     <MESSAGE value="add datebase h2. Update pom: jar build dependices (h2)." />
-    <option name="LAST_COMMIT_MESSAGE" value="add datebase h2. Update pom: jar build dependices (h2)." />
+    <MESSAGE value="update gui and console view load saves from db/file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update gui and console view load saves from db/file" />
   </component>
 </project>
