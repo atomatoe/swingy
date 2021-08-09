@@ -1,10 +1,17 @@
+import Controller.DateBaseController;
 import Controller.GameController;
+
+import javax.swing.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class Program {
     public static void main(String[] args) {
         if(args.length != 1) {
             System.out.println("Error program arguments! Need argument: console/gui");
         } else {
+            DateBaseController.getInstance(); // init database connect
             GameController game = GameController.getInstance();
             if(args[0].equals("gui"))
                 game.stage_main();

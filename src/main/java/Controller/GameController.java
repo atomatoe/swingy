@@ -6,10 +6,13 @@ import Model.Window;
 import View.Console.*;
 import View.GUI.*;
 
+import javax.xml.crypto.Data;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
@@ -219,6 +222,30 @@ public class GameController {
         }
     }
 
+    public void save_Hero_DB() {
+        DateBaseController dateBaseController = DateBaseController.getInstance();
+        int axe = 0;
+        int armor = 0;
+        int helm = 0;
+        if(currentHero.getAxe() != null)
+            axe = currentHero.getAxe().getAttack();
+        if(currentHero.getArmor() != null)
+            armor = currentHero.getArmor().getDefence();
+        if(currentHero.getHelm() != null)
+            helm = currentHero.getHelm().getHitPoints();
+        dateBaseController.executeUpdate("INSERT INTO heroes (name, class, attack, defense, hitPoints, lvl, exp," +
+                    "coordinatesX, coordinatesY, photo, photoFace, photoLeft, photoRight, photoBehind, axe, armor, helm," +
+                    "killedMonsters, allSteps) VALUES (" +
+                    "'" + currentHero.getName() + "','" + currentHero.getHeroClass() + "', " + currentHero.getAttack() +
+                    "," + currentHero.getDefence() + " , " + currentHero.getHitPoints() + ", " + currentHero.getLvl() +
+                    "," + currentHero.getExp() + ", " + currentHero.getCoordinates_x() + ", " + currentHero.getCoordinates_y() +
+                    "," + "'" + currentHero.getPhoto() + "', '"+ currentHero.getPhoto_face() +
+                    "','" + currentHero.getPhoto_left() + "', '"+ currentHero.getPhoto_right() +"'," +
+                    "'" + currentHero.getPhoto_behind() + "', " + axe + ", " + armor + ", " + helm +
+                    "," + currentHero.getKilledMonsters() + ", " + currentHero.getAllSteps() + "" +
+                    ");");
+    }
+
     public void loadHero(String filename) {
         try {
             FileReader fr = new FileReader("./src/main/resources/saves/" + filename);
@@ -252,6 +279,25 @@ public class GameController {
         } catch (Exception e) {
             System.out.println("Error read file!");
             System.exit(-1);
+        }
+    }
+
+    public void loadHero_DB(String id) {
+        try {
+            ResultSet test = DateBaseController.getInstance().executeQuery("SELECT * from heroes where id=" + id);
+            while (test.next()) {
+                create_currentHero(test.getString("name"), test.getString("class"),
+                        Integer.parseInt(test.getString("attack")), Integer.parseInt(test.getString("defense")),
+                        Integer.parseInt(test.getString("hitPoints")), test.getString("photo"),
+                        Integer.parseInt(test.getString("lvl")), Integer.parseInt(test.getString("exp")),
+                        Integer.parseInt(test.getString("coordinatesX")), Integer.parseInt(test.getString("coordinatesY")),
+                        test.getString("photoLeft"), test.getString("photoRight"), test.getString("photoBehind"));
+                        currentHero.load_set(test.getString("photoFace"), Integer.parseInt(test.getString("axe")),
+                                Integer.parseInt(test.getString("armor")), Integer.parseInt(test.getString("helm")),
+                                Integer.parseInt(test.getString("killedMonsters")), Integer.parseInt(test.getString("allSteps")));
+            }
+        } catch (SQLException e) {
+            System.out.println("Error loadHeroBD gameController");
         }
     }
 

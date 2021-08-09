@@ -284,6 +284,11 @@ public class GamePage {
         save.addActionListener(new GamePage.ButtonClickListener());
         button_panel.add(save);
 
+        JButton save_db = frame.create_button("SaveDB", 16);
+        save_db.setActionCommand("SaveDB");
+        save_db.addActionListener(new GamePage.ButtonClickListener());
+        button_panel.add(save_db);
+
         JButton console = frame.create_button("Console", 16);
         console.setActionCommand("Console");
         console.addActionListener(new GamePage.ButtonClickListener());
@@ -426,6 +431,9 @@ public class GamePage {
             String command = e.getActionCommand();
             if (command.equals("Save")) {
                 GameController.getInstance().save_Hero();
+                render();
+            } else if (command.equals("SaveDB")) {
+                GameController.getInstance().save_Hero_DB();
                 render();
             } else if(command.equals("Console")) {
                 Window.getInstance().clear_window();

@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="add manifest, upd pom.xml">
+    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="add datebase h2. Update pom: jar build dependices (h2).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DateBaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DateBaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/Battle_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/Battle_C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/CreateHeroPage_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/CreateHeroPage_C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/GamePage_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/GamePage_C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +35,31 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1vzrPJFao5gStfbyo5QJBiEVoMj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -65,9 +78,12 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
-      <command value="mvn clean compile" />
       <command value="mvn install maven-resources-plugin" />
+      <command value="mvn package" />
+      <command value="mvn clean compile" />
+      <command value="mvn clean compile assembly:single" />
       <command value="mvn clean install" />
+      <command value="mvn clean compile assembly:single " />
     </option>
   </component>
   <component name="RunManager">
@@ -163,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628453585891</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="upd console game: clear console next step in game">
+      <created>1628454208121</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1628454208121</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +205,8 @@
     <MESSAGE value="upd" />
     <MESSAGE value="add saves, add console-game" />
     <MESSAGE value="add manifest, upd pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add manifest, upd pom.xml" />
+    <MESSAGE value="upd console game: clear console next step in game" />
+    <MESSAGE value="add datebase h2. Update pom: jar build dependices (h2)." />
+    <option name="LAST_COMMIT_MESSAGE" value="add datebase h2. Update pom: jar build dependices (h2)." />
   </component>
 </project>
