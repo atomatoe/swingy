@@ -1,6 +1,6 @@
 # Swingy
 
-<p align="center"><img src="" alt="Здесь должно быть фото"</p>
+<p align="center"><img src="https://github.com/atomatoe/swingy/blob/main/Screenshots/mainPage.png?raw=true" alt="Здесь должно быть фото"</p>
 
 ________________________________________________________________
 
@@ -94,6 +94,18 @@ ________________________________________________________________
 - Вы сохраняете героев пользователя в реляционной базе данных, а не в текстовом файле.
 - Вы можете переключаться между консольным видом и видом графического интерфейса во время выполнения, не закрывая игру.
 ________________________________________________________________
+
+<details>
+<summary>Screenshots</summary>
+<p align="center"><img src="https://github.com/atomatoe/swingy/blob/main/Screenshots/createHeroPage.png?raw=true" alt="Здесь должно быть фото"</p>
+<p align="center"><img src="https://github.com/atomatoe/swingy/blob/main/Screenshots/createHeroPage2.png?raw=true" alt="Здесь должно быть фото"</p>
+<p align="center"><img src="https://github.com/atomatoe/swingy/blob/main/Screenshots/loadHeroPage.png?raw=true" alt="Здесь должно быть фото"</p>
+<p align="center"><img src="https://github.com/atomatoe/swingy/blob/main/Screenshots/loadHeroDBpage.png?raw=true" alt="Здесь должно быть фото"</p>
+<p align="center"><img src="https://github.com/atomatoe/swingy/blob/main/Screenshots/gamePage.png?raw=true" alt="Здесь должно быть фото"</p>
+<p align="center"><img src="https://github.com/atomatoe/swingy/blob/main/Screenshots/gamePage2.png?raw=true" alt="Здесь должно быть фото"</p>
+<p align="center"><img src="https://github.com/atomatoe/swingy/blob/main/Screenshots/BattlePage.png?raw=true" alt="Здесь должно быть фото"</p>
+<p align="center"><img src="https://github.com/atomatoe/swingy/blob/main/Screenshots/HeroLosePage.png?raw=true" alt="Здесь должно быть фото"</p>
+</details>
 
 <details>
 <summary>Полезные ссылки</summary>
