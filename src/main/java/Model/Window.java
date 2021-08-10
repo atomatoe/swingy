@@ -14,7 +14,9 @@ public class Window {
     public static Window getInstance() {
         if (instance == null) {
             mainFrame = new JFrame("SWINGY");
-            mainFrame.setSize(1200,800);
+            mainFrame.setExtendedState(Frame.MAXIMIZED_BOTH);
+            mainFrame.setUndecorated(true);
+//            mainFrame.setSize(1200,800);
             mainFrame.addWindowListener(new WindowAdapter() {
                 public void windowClosing(WindowEvent windowEvent){
                     System.exit(0);

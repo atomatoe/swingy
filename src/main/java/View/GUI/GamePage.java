@@ -41,8 +41,7 @@ public class GamePage {
     }
     public void paint_page() {
         Window frame = Window.getInstance();
-        frame.getMainFrame().setFocusable(true);
-        frame.getMainFrame().setFocusTraversalKeysEnabled(false);
+//        frame.getMainFrame().setFocusTraversalKeysEnabled(false);
         board_signal = new MyKey();
         frame.getMainFrame().addKeyListener(board_signal);
         frame.getMainFrame().setFocusable(true);
@@ -76,7 +75,7 @@ public class GamePage {
     private JPanel paint_map() {
         size = (GameController.getInstance().getCurrentHero().getLvl() - 1) * 5 + 10;
         JPanel map = new JPanel(new GridBagLayout());
-        int textures_size = ((Window.getInstance().getMainFrame().getWidth() / 3) * 2) / (size + 1);
+        int textures_size = ((Window.getInstance().getMainFrame().getWidth() / 3) * 2) / (size + 2);
         GridBagConstraints c = new GridBagConstraints();
         ImageIcon imageIcon = new ImageIcon("./src/main/resources/images/textures/grass/grass4.png"); // load the image to a imageIcon
         Image image = imageIcon.getImage();
@@ -115,7 +114,7 @@ public class GamePage {
     }
 
     private JPanel paint_saved(JPanel map) {
-        int textures_size = ((Window.getInstance().getMainFrame().getWidth() / 3) * 2) / (size + 1);
+        int textures_size = ((Window.getInstance().getMainFrame().getWidth() / 3) * 2) / (size + 2);
         GridBagConstraints c = new GridBagConstraints();
         ImageIcon avatarIcon = null;
         for(int i = 0; i != enemy_list.size(); i++) {
@@ -165,7 +164,7 @@ public class GamePage {
         Hero enemy;
         GridBagConstraints c = new GridBagConstraints();
         ImageIcon avatarIcon = null;
-        int textures_size = ((Window.getInstance().getMainFrame().getWidth() / 3) * 2) / (size + 1);
+        int textures_size = ((Window.getInstance().getMainFrame().getWidth() / 3) * 2) / (size + 2);
         for(int i = 0; i < GameController.getInstance().getCurrentHero().getLvl() + 2; i++) {
             enemy = generate_enemy(GameController.getInstance().getCurrentHero().getLvl());
             try {
@@ -223,7 +222,7 @@ public class GamePage {
         }
         GridBagConstraints c = new GridBagConstraints();
         ImageIcon avatarIcon = null;
-        int textures_size = ((Window.getInstance().getMainFrame().getWidth() / 3) * 2) / (size + 1);
+        int textures_size = ((Window.getInstance().getMainFrame().getWidth() / 3) * 2) / (size + 2);
         try {
             BufferedImage logo = ImageIO.read(new File("./src/main/resources/images/textures/grass/grass4.png"));
             BufferedImage source = ImageIO.read(new File(cave.getPhoto()));
