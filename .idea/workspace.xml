@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="upd">
+    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="fix textures size in map">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/GamePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database/swingy.h2.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/swingy.h2.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swingy_by_atomatoe.jar" beforeDir="false" afterPath="$PROJECT_DIR$/swingy_by_atomatoe.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628557017837</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix textures size in map">
+      <created>1628561192951</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1628561192951</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,6 +264,7 @@
     <MESSAGE value="delete target" />
     <MESSAGE value="add screenshots" />
     <MESSAGE value="upd" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd" />
+    <MESSAGE value="fix textures size in map" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix textures size in map" />
   </component>
 </project>
