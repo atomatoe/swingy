@@ -4,189 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="add cave and crystal">
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/Console/LoadHeroPage_BD_C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/Console/LoadHeroPage_C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/Console/LoadHeroPage_noBD_C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/GUI/LoadHeroPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/GUI/LoadHeroPage_BD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/GUI/LoadHeroPage_noBD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database/swingy.h2.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database/swingy.trace.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/other/crystal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/saves/hero1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/saves/hero2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/manifest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swingy_by_atomatoe.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Controller/DateBaseController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Controller/GameController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Model/Artifact.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Model/Hero.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Model/Window$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Model/Window.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Program.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/Console/Battle_C.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/Console/CreateHeroPage_C.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/Console/GamePage_C.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/Console/LoadHeroPage_BD_C.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/Console/LoadHeroPage_C.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/Console/LoadHeroPage_noBD_C.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/Console/MainPage_C.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/Battle$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/Battle$ButtonClickListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/Battle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/CreateHeroPage$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/CreateHeroPage$ButtonClickListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/CreateHeroPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/GamePage$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/GamePage$ButtonClickListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/GamePage$MyKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/GamePage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/LoadHeroPage$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/LoadHeroPage$ButtonClickListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/LoadHeroPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/LoadHeroPage_BD$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/LoadHeroPage_BD$ButtonClickListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/LoadHeroPage_BD.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/LoadHeroPage_noBD$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/LoadHeroPage_noBD$ButtonClickListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/LoadHeroPage_noBD.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/MainPage$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/MainPage$ButtonClickListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/View/GUI/MainPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/database/swingy.h2.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/database/swingy.trace.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/Neutral/Cat/Cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/Neutral/Cat/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/Neutral/Cat/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/Neutral/Cat/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/Neutral/Cat/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/Neutral/Dog/Dog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/Neutral/Dog/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/Neutral/Dog/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/Neutral/Dog/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/Neutral/Dog/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/Attack/Sword1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/Attack/Sword2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/Attack/Sword3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/Attack/Sword4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/Defence/Armor1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/Defence/Armor2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/Defence/Armor3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/Defence/Armor4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/HitPoints/Helm1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/HitPoints/Helm2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/HitPoints/Helm3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/HitPoints/Helm4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/artifacts/empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy1/Enemy1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy1/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy1/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy1/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy1/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy2/Enemy2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy2/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy2/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy2/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy2/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy3/Enemy3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy3/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy3/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy3/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy3/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy4/Enemy4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy4/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy4/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy4/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy4/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy5/Enemy5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy5/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy5/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy5/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy5/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy6/Enemy6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy6/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy6/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy6/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy6/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy7/Enemy7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy7/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy7/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy7/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy7/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy8/Enemy8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy8/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy8/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy8/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/enemy/Enemy8/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Druid/Druid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Druid/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Druid/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Druid/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Druid/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Mage/Mage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Mage/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Mage/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Mage/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Mage/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Paladin/Paladin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Paladin/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Paladin/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Paladin/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Paladin/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Rogue/Rogue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Rogue/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Rogue/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Rogue/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Rogue/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Warrior/Warrior.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Warrior/behind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Warrior/face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Warrior/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/heroes/Warrior/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/other/crystal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/other/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/other/home2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/other/versus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/other/waiting.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/pages/GamePage.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/pages/createHeroPage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/pages/gameOver.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/pages/gameOver2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/pages/loadHeroPage.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/pages/mainPage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/dirt/dirt1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/dirt/dirt2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/dirt/dirt3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/dirt/dirt32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/dirt/dirt4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/dirt/dirt5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/grass/grass1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/grass/grass2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/grass/grass3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/grass/grass32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/grass/grass4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/grass/grass5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/kusa/kusa1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/kusa/kusa2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/kusa/kusa3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/kusa/kusa32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/kusa/kusa4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/kusa/kusa5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/water/water1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/water/water2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/water/water3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/water/water32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/water/water4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/textures/water/water5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/saves/hero1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/saves/hero2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/Battle_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/Battle_C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Console/GamePage_C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Console/GamePage_C.java" afterDir="false" />
+    <list default="true" id="19b1e1ca-fd0e-4f34-86d4-2285ccd23f71" name="Default Changelist" comment="delete target">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/swingy.h2.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/swingy.h2.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/swingy.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/swingy.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,7 +204,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628551334701</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add cave and crystal">
+      <created>1628553193552</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1628553193552</updated>
+    </task>
+    <task id="LOCAL-00015" summary="delete target">
+      <created>1628553226274</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1628553226274</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -407,6 +241,7 @@
     <MESSAGE value="add datebase h2. Update pom: jar build dependices (h2)." />
     <MESSAGE value="update gui and console view load saves from db/file" />
     <MESSAGE value="add cave and crystal" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cave and crystal" />
+    <MESSAGE value="delete target" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete target" />
   </component>
 </project>
