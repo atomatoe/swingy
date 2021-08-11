@@ -1,0 +1,196 @@
+2021-08-10 03:30:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 03:30:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 03:30:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 03:31:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 03:32:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 03:33:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:03:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:09:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:14:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:14:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:15:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:17:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:20:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:22:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:24:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:24:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:35:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:36:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:36:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:42:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:42:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:46:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:47:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:51:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:52:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:53:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:54:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:55:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:58:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:58:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:58:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:59:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 04:59:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 05:01:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 05:01:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 05:02:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 05:03:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 05:05:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 14:06:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 14:09:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 14:10:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 14:14:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-10 14:15:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-11 15:30:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-11 15:30:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-11 15:36:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-11 15:38:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-11 15:39:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]
+2021-08-11 15:40:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "HEROES" уже существует
+Table "HEROES" already exists; SQL statement:
+CREATE TABLE heroes (id bigint generated always as identity,name VARCHAR(20) NOT NULL,class VARCHAR(20) NOT NULL,attack INT NOT NULL,defense INT NOT NULL,hitPoints INT NOT NULL,lvl INT NOT NULL,exp INT NOT NULL,coordinatesX INT NOT NULL,coordinatesY INT NOT NULL,photo VARCHAR(100) NOT NULL,photoFace VARCHAR(100) NOT NULL,photoLeft VARCHAR(100) NOT NULL,photoRight VARCHAR(100) NOT NULL,photoBehind VARCHAR(100) NOT NULL,axe INT NOT NULL,armor INT NOT NULL,helm INT NOT NULL,killedMonsters INT NOT NULL,allSteps INT NOT NULL); [42101-200]

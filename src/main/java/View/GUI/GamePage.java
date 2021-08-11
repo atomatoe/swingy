@@ -26,6 +26,7 @@ public class GamePage {
     private static MyKey board_signal;
     private Hero cave;
     private Hero crystal;
+    private boolean crystal_in_map;
 
     public static GamePage getInstance() {
         if(instance == null) {
@@ -40,6 +41,7 @@ public class GamePage {
         this.first_generate = 1;
         this.enemy_list = enemy_list;
     }
+
     public void paint_page() {
         Window frame = Window.getInstance();
         board_signal = new MyKey();
@@ -99,6 +101,7 @@ public class GamePage {
             System.out.println("ERROR paint_map");
         }
         if(first_generate == 0) {
+            crystal_in_map = false;
             map = paint_enemy_neutrals(map);
             first_generate = 1;
         } else {
@@ -120,6 +123,7 @@ public class GamePage {
     }
 
     private JPanel paint_saved(JPanel map) {
+        Random random = new Random();
         int max = ((Window.getInstance().getMainFrame().getWidth() / 3) * 2) / (size + 1);
         if(Window.getInstance().getMainFrame().getWidth() > Window.getInstance().getMainFrame().getHeight())
             max = Window.getInstance().getMainFrame().getHeight();
@@ -152,9 +156,9 @@ public class GamePage {
             c.gridy = cave.getCoordinates_y();
             map.add(new JLabel(avatarIcon), c);
 
-            if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
-            logo = ImageIO.read(new File("./src/main/resources/images/textures/grass/grass4.png"));
-            source = ImageIO.read(new File(crystal.getPhoto()));
+            if(crystal_in_map && GameController.getInstance().getCurrentHero().getLvl() > 5) {
+                logo = ImageIO.read(new File("./src/main/resources/images/textures/grass/grass4.png"));
+                source = ImageIO.read(new File(crystal.getPhoto()));
                 logo.getGraphics().drawImage(source, 0, 0, null);
                 newimgAvatar = logo.getScaledInstance(textures_size, textures_size, java.awt.Image.SCALE_SMOOTH);
                 avatarIcon = new ImageIcon(newimgAvatar);
@@ -249,7 +253,8 @@ public class GamePage {
             c.gridy = cave.getCoordinates_y();
             map.add(new JLabel(avatarIcon), c);
 
-            if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
+            if(GameController.getInstance().getCurrentHero().getLvl() > 5 && random.nextInt(2 + 1) == 0) {
+                crystal_in_map = true;
                 logo = ImageIO.read(new File("./src/main/resources/images/textures/grass/grass4.png"));
                 source = ImageIO.read(new File(crystal.getPhoto()));
                 logo.getGraphics().drawImage(source, 0, 0, null);
@@ -576,7 +581,7 @@ public class GamePage {
                     first_generate = 0;
                     render();
                 } else if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
-                    if(GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
+                    if(crystal_in_map &&  GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
                             GameController.getInstance().getCurrentHero().getCoordinates_y() == crystal.getCoordinates_y()) {
                         frame.getMainFrame().removeKeyListener(board_signal);
                         Battle.getInstance().paint_win();
@@ -599,7 +604,7 @@ public class GamePage {
                     first_generate = 0;
                     render();
                 } else if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
-                    if(GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
+                    if(crystal_in_map && GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
                             GameController.getInstance().getCurrentHero().getCoordinates_y() == crystal.getCoordinates_y()) {
                         frame.getMainFrame().removeKeyListener(board_signal);
                         Battle.getInstance().paint_win();
@@ -622,7 +627,7 @@ public class GamePage {
                     first_generate = 0;
                     render();
                 } else if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
-                    if(GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
+                    if(crystal_in_map && GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
                             GameController.getInstance().getCurrentHero().getCoordinates_y() == crystal.getCoordinates_y()) {
                         frame.getMainFrame().removeKeyListener(board_signal);
                         Battle.getInstance().paint_win();
@@ -645,7 +650,7 @@ public class GamePage {
                     first_generate = 0;
                     render();
                 } else if(GameController.getInstance().getCurrentHero().getLvl() > 5) {
-                    if(GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
+                    if(crystal_in_map && GameController.getInstance().getCurrentHero().getCoordinates_x() == crystal.getCoordinates_x() &&
                             GameController.getInstance().getCurrentHero().getCoordinates_y() == crystal.getCoordinates_y()) {
                         frame.getMainFrame().removeKeyListener(board_signal);
                         Battle.getInstance().paint_win();
